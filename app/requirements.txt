@@ -1,0 +1,10 @@
+# Match the model runtime used for the published artifacts.
+scikit-learn==1.9.1
+xgboost==3.4.1
+numpy>=2.1
+pandas>=2.2
+pyarrow>=17
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+httpx>=0.27

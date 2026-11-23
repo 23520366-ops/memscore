@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MemScope – Phát hiện mã độc dựa vào phân tích bộ nhớ</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect x=%225%22 y=%227%22 width=%2222%22 height=%2218%22 rx=%224%22 fill=%22%232262ec%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+
+  <main>
+    <header class="topbar">
+      <div class="title">
+        <h1>MemScope</h1>
+        <p>Phát hiện mã độc dựa vào phân tích bộ nhớ</p>
+      </div>
+      <nav class="tabs" aria-label="Chọn mô hình">
+        <button class="tab active" data-view="windows" aria-pressed="true">Windows (sạch/độc + loại)</button>
+        <button class="tab" data-view="android_ram" aria-pressed="false">Android: loại mã độc (RAM)</button>
+        <button class="tab" data-view="android_static" aria-pressed="false">Android: sạch hay độc</button>
+      </nav>
+    </header>
+
+    <p class="model-info muted" id="modelInfo"></p>
+    <section id="analysis" class="grid">
+      <aside class="col-left">
+        <div class="card sample-card" id="sampleCard">
+          <div class="sample-head">
+            <h2 id="sampleTitle">Chọn một mẫu để bắt đầu</h2>
+            <p class="muted" id="sampleSource">Các mẫu soạn sẵn được lấy từ dữ liệu kiểm thử.</p>
+            <p class="muted hidden" id="presetProgress" role="status"></p>
+          </div>
+          <div class="sample-id">
+            <dl>
+              <dt>Mã băm</dt><dd id="sampleHash" class="hash">—</dd>
+              <dt>Nhãn thật</dt><dd id="sampleTruth">—</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="card list-card" id="listCard">
+          <div class="list-head">
+            <h3>Mẫu soạn sẵn</h3>
+            <button class="btn btn-primary" id="randomBtn">Chọn ngẫu nhiên</button>
+          </div>
+          <ul class="sample-list" id="sampleList"></ul>
+        </div>
+
+        <div class="card drop-card">
+          <h3 id="uploadTitle">Phân tích tệp .exe</h3>
+          <p class="muted" id="uploadHint"></p>
+          <label class="dropzone" id="dropzone" tabindex="0">
+            <input type="file" id="fileInput" hidden>
+            <span>Thả tệp vào đây hoặc bấm để chọn</span>
+          </label>
+          <div id="jobProgress" class="hidden">
+            <p id="jobStatus" role="status"></p>
+            <ol class="job-steps" id="jobSteps"></ol>
+          </div>
+        </div>
+      </aside>
+
+      <div class="stage card" id="mapStage">
+        <div class="stage-head">
+          <h3 id="mapTitle">Bản đồ bộ nhớ</h3>
+          <p class="muted" id="mapHint">Mỗi ô là một nhóm chỉ số rút từ RAM. Ô càng đỏ, các chỉ số trong đó càng khác so với bình thường.</p>
+        </div>
+        <div class="stage-body">
+          <svg id="memMap" viewBox="34 22 572 462" role="img" aria-label="Bản đồ bộ nhớ"></svg>
+          <div class="zone-detail" id="zoneDetail"><p class="muted">Bấm vào một ô trên bản đồ để xem các chỉ số bên trong.</p></div>
+        </div>
+        <div class="stage-empty" id="stageEmpty">Chưa có mẫu nào được phân tích.</div>
+      </div>
+
+      <aside class="col-right">
+        <div class="card verdict-card">
+          <h3>Kết luận</h3>
+          <div class="gauge-wrap">
+            <svg viewBox="0 0 120 120" class="gauge"><circle cx="60" cy="60" r="50" class="g-track"/><circle cx="60" cy="60" r="50" class="g-val" id="gaugeVal"/></svg>
+            <div class="gauge-text"><strong id="verdictPct">—</strong><span id="verdictLabel">chưa phân tích</span></div>
+          </div>
+          <p class="verdict-note" id="verdictNote"></p>
+          <div class="truth" id="truthRow"></div>
+          <div class="profile-score hidden" id="profileScore">
+            <h3 id="profileTitle">Độ lệch trong tập huấn luyện</h3>
+            <p class="muted" id="profileValue"></p>
+          </div>
+        </div>
+        <div class="card types-card" id="typesCard">
+          <h3 id="typesTitle">Loại mã độc có khả năng nhất</h3>
+          <ol class="bars" id="typeBars"><li class="muted">Kết quả sẽ hiện ở đây.</li></ol>
+        </div>
+      </aside>
+
+      <div class="below-stage">
+        <div class="strip" id="indicatorStrip"></div>
+        <section class="card ram-card hidden" id="ramCard" aria-labelledby="ramTitle">
+          <h3 id="ramTitle">Bảng số đo RAM trên máy ảo</h3>
+          <table>
+            <thead><tr id="ramHeader"><th scope="col">Chỉ số</th><th scope="col">Số đo</th></tr></thead>
+            <tbody id="ramRows"></tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+  </main>
+</div>
+<div class="toast hidden" id="toast" role="status"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

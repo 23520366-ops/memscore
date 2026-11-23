@@ -1,0 +1,26 @@
+{
+  "tong_so_dong_file_goc": 357805,
+  "so_mau_moi_loai_file_goc": {
+    "Benign": 162181,
+    "Riskware": 97349,
+    "Adware": 47210,
+    "Trojan": 13559,
+    "Zeroday": 13340,
+    "Ransomware": 6202,
+    "Spy": 3540,
+    "SMS": 3125,
+    "Dropper": 2302,
+    "NoCategory": 2296,
+    "PUA": 2051,
+    "Scareware": 1556,
+    "Backdoor": 1538,
+    "Banker": 887,
+    "FileInfector": 669
+  },
+  "so_mau_lay": {
+    "sach": 40000,
+    "doc": 40000
+  },
+  "so_dac_trung_con_lai": 4220,
+  "ghi_chu": "Đặc trưng tĩnh F1..F9503, tác giả không công bố tên"
+}

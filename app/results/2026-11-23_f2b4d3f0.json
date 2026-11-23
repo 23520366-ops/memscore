@@ -1,0 +1,335 @@
+{
+  "thoi_diem": "2026-11-23T02:51:35.354040+07:00",
+  "job_id": "53282e3dd6664929a43987afb312bffa",
+  "sha256": "f2b4d3f021c3a6207c3c9e75a75fa325b88847bd46b4f99e41e28dc3be8fae7f",
+  "ten_file": "org.secuso.privacyfriendlydicer_101.apk",
+  "goi": "org.secuso.privacyfriendlydicer",
+  "may_ao": "emulator-5554",
+  "giay_chay": 40,
+  "buoc": [
+    {
+      "ma": "sha256",
+      "ten": "Tính SHA-256",
+      "trang_thai": "xong",
+      "thoi_gian": 0.03,
+      "ghi_chu": "f2b4d3f021c3a6207c3c9e75a75fa325b88847bd46b4f99e41e28dc3be8fae7f"
+    },
+    {
+      "ma": "may_ao",
+      "ten": "Chuẩn bị máy ảo Android",
+      "trang_thai": "xong",
+      "thoi_gian": 0.13,
+      "ghi_chu": "Dùng máy ảo đang mở (emulator-5554)."
+    },
+    {
+      "ma": "cai_dat",
+      "ten": "Cài app và xác định gói",
+      "trang_thai": "xong",
+      "thoi_gian": 1.01,
+      "ghi_chu": "Đã cài org.secuso.privacyfriendlydicer."
+    },
+    {
+      "ma": "chay",
+      "ten": "Mở app và chạy Monkey",
+      "trang_thai": "xong",
+      "thoi_gian": 42.47,
+      "ghi_chu": "Monkey gửi 160 lượt chạm ngẫu nhiên, cách nhau 250 ms."
+    },
+    {
+      "ma": "doc_ram",
+      "ten": "Đọc số đo RAM",
+      "trang_thai": "xong",
+      "thoi_gian": 0.35,
+      "ghi_chu": "Tổng PSS 42690 KB."
+    },
+    {
+      "ma": "cham_diem",
+      "ten": "Chấm điểm bằng mô hình",
+      "trang_thai": "xong",
+      "thoi_gian": 0.01,
+      "ghi_chu": "Loại đứng đầu theo mô hình: Zero-day (mới, chưa rõ loại) (34,28%)."
+    },
+    {
+      "ma": "go_app",
+      "ten": "Gỡ app",
+      "trang_thai": "xong",
+      "thoi_gian": 0.38,
+      "ghi_chu": "Gói org.secuso.privacyfriendlydicer đã được dọn khỏi máy ảo."
+    }
+  ],
+  "meminfo_tho": "Applications Memory Usage (in Kilobytes):\nUptime: 410192 Realtime: 410192\n\n** MEMINFO in pid 6473 [org.secuso.privacyfriendlydicer] **\n                   Pss      Pss   Shared  Private   Shared  Private  SwapPss      Rss     Heap     Heap     Heap\n                 Total    Clean    Dirty    Dirty    Clean    Clean    Dirty    Total     Size    Alloc     Free\n                ------   ------   ------   ------   ------   ------   ------   ------   ------   ------   ------\n  Native Heap    26317        0     1248    26288        0       20       22    27556    33196    27396     1937\n  Dalvik Heap     3479        0      880     3428       72       12       93     4392     8570     4285     4285\n Dalvik Other     1308        0      732     1092        4        0        3     1828                           \n        Stack      456        0        4      456        0        0        0      460                           \n       Ashmem        9        0      556        0        0        0        0      556                           \n    Other dev       22        0      232        4        0       16        0      252                           \n     .so mmap     4828     2748     1556      264    32508     2748        2    37076                           \n    .jar mmap     1307       80        0        0    27536       80        0    27616                           \n    .apk mmap      340       72        0        0     2368       72        0     2440                           \n    .ttf mmap       74       20        0        0      348       20        0      368                           \n    .dex mmap     2335     2324        0        4      768     2324        0     3096                           \n    .oat mmap      512        0        0        0    14016        0        0    14016                           \n    .art mmap      867       40    19144      488      364       40       98    20036                           \n   Other mmap      115        0       20        8     1292       52        0     1372                           \n      Unknown      503        0      368      500        0        0        0      868                           \n        TOTAL    42690     5284    24740    32532    79276     5384      218   141932    41766    31681     6222\n \n Dalvik Details\n        .Heap     3076        0        0     3076        0        0        0     3076                           \n         .LOS        0        0       56        0        0        0       19       56                           \n      .Zygote      307        0      824      256       72       12       74     1164                           \n   .NonMoving       96        0        0       96        0        0        0       96                           \n .LinearAlloc      960        0      224      960        4        0        3     1188                           \n          .GC      104        0       60      104        0        0        0      164                           \n   .ZygoteJIT        0        0       16        0        0        0        0       16                           \n      .AppJIT      236        0      432       20        0        0        0      452                           \n .IndirectRef        8        0        0        8        0        0        0        8                           \n   .Boot vdex        7        0        0        0      760        0        0      760                           \n     .App dex       36       32        0        4        0       32        0       36                           \n    .App vdex     2292     2292        0        0        8     2292        0     2300                           \n    .Boot art      867       40    19144      488      364       40       98    20036                           \n \n App Summary\n                       Pss(KB)                        Rss(KB)\n                        ------                         ------\n           Java Heap:     3956                          24428\n         Native Heap:    26288                          27556\n                Code:     5532                          85080\n               Stack:      456                            460\n            Graphics:        0                              0\n       Private Other:     1684\n              System:     4774\n             Unknown:                                    4408\n \n           TOTAL PSS:    42690            TOTAL RSS:   141932       TOTAL SWAP PSS:      218\n \n Objects\n               Views:      221         ViewRootImpl:        2\n         AppContexts:       10           Activities:        3\n              Assets:       19        AssetManagers:        0\n       Local Binders:       17        Proxy Binders:       45\n       Parcel memory:        5         Parcel count:       22\n    Death Recipients:        0             WebViews:        0\n \n SQL\n         MEMORY_USED:      189\n  PAGECACHE_OVERFLOW:       71          MALLOC_SIZE:       46\n \n DATABASES\n      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname\nPER CONNECTION STATS\n         4       28             14     4    40     1  /data/user/0/org.secuso.privacyfriendlydicer/databases/dicer\n         4        8                    0     0     0    (attached) temp\n         4       28             22     4    15     1  /data/user/0/org.secuso.privacyfriendlydicer/databases/dicer (3)\nPOOL STATS\n     cache hits  cache misses    cache size  Dbname\n             10            87            97  /data/user/0/org.secuso.privacyfriendlydicer/databases/dicer\n",
+  "so_do_ram": {
+    "Memory_PssTotal": 42690,
+    "Memory_PssClean": 5284,
+    "Memory_SharedDirty": 24740,
+    "Memory_PrivateDirty": 32532,
+    "Memory_SharedClean": 79276,
+    "Memory_PrivateClean": 5384,
+    "Memory_SwapPssDirty": 218,
+    "Memory_HeapSize": 41766,
+    "Memory_HeapAlloc": 31681,
+    "Memory_HeapFree": 6222,
+    "Memory_Views": 221,
+    "Memory_ViewRootImpl": 2,
+    "Memory_AppContexts": 10,
+    "Memory_Activities": 3,
+    "Memory_Assets": 19,
+    "Memory_AssetManagers": 0,
+    "Memory_LocalBinders": 17,
+    "Memory_ProxyBinders": 45,
+    "Memory_ParcelMemory": 5,
+    "Memory_ParcelCount": 22,
+    "Memory_DeathRecipients": 0,
+    "Memory_OpenSSLSockets": null,
+    "Memory_WebViews": 0
+  },
+  "ket_qua": {
+    "nen_tang": "android_ram",
+    "nguon": "Đo trực tiếp trên máy ảo Android (org.secuso.privacyfriendlydicer)",
+    "sach_doc": {
+      "co": false,
+      "ly_do": "Mô hình RAM Android học từ tập dữ liệu chỉ có mã độc và dự đoán loại mã độc. Với app sạch, loại dự đoán và độ tin cậy chỉ mang tính tham khảo."
+    },
+    "loai": [
+      {
+        "ma": "Zero_Day",
+        "ten": "Zero-day (mới, chưa rõ loại)",
+        "p": 0.3428
+      },
+      {
+        "ma": "Riskware",
+        "ten": "Riskware",
+        "p": 0.3043
+      },
+      {
+        "ma": "Adware",
+        "ten": "Adware",
+        "p": 0.2668
+      }
+    ],
+    "chac_chan": false,
+    "nhan_that": null,
+    "ho": null,
+    "dung": null,
+    "khoi": [
+      {
+        "ma": "Heap",
+        "ten": "Heap",
+        "mo_ta": "Bộ nhớ heap Java và heap native của tiến trình",
+        "muc": 0.232,
+        "chi_so": [
+          {
+            "ten": "Memory_HeapSize",
+            "gia_tri": 41766.0,
+            "trung_vi": 20449.0,
+            "do_lech": 1.39
+          },
+          {
+            "ten": "Memory_HeapAlloc",
+            "gia_tri": 31681.0,
+            "trung_vi": 16575.0,
+            "do_lech": 1.24
+          },
+          {
+            "ten": "Memory_HeapFree",
+            "gia_tri": 6222.0,
+            "trung_vi": 4063.0,
+            "do_lech": 0.67
+          }
+        ]
+      },
+      {
+        "ma": "RAM riêng",
+        "ten": "RAM riêng",
+        "mo_ta": "RAM chỉ app này dùng",
+        "muc": 0.047,
+        "chi_so": [
+          {
+            "ten": "Memory_PrivateDirty",
+            "gia_tri": 32532.0,
+            "trung_vi": 41404.0,
+            "do_lech": 0.28
+          },
+          {
+            "ten": "Memory_PrivateClean",
+            "gia_tri": 5384.0,
+            "trung_vi": 8180.0,
+            "do_lech": 0.14
+          }
+        ]
+      },
+      {
+        "ma": "RAM chia sẻ",
+        "ten": "RAM chia sẻ",
+        "mo_ta": "RAM tính cả phần dùng chung với app khác",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "Memory_SharedDirty",
+            "gia_tri": 24740.0,
+            "trung_vi": 10732.0,
+            "do_lech": 12.78
+          },
+          {
+            "ten": "Memory_SharedClean",
+            "gia_tri": 79276.0,
+            "trung_vi": 89516.0,
+            "do_lech": 0.46
+          },
+          {
+            "ten": "Memory_PssTotal",
+            "gia_tri": 42690.0,
+            "trung_vi": 61249.0,
+            "do_lech": 0.41
+          },
+          {
+            "ten": "Memory_PssClean",
+            "gia_tri": 5284.0,
+            "trung_vi": 6352.0,
+            "do_lech": 0.05
+          }
+        ]
+      },
+      {
+        "ma": "Giao diện",
+        "ten": "Giao diện",
+        "mo_ta": "Số màn hình và thành phần giao diện",
+        "muc": 0.197,
+        "chi_so": [
+          {
+            "ten": "Memory_Views",
+            "gia_tri": 221.0,
+            "trung_vi": 35.0,
+            "do_lech": 1.18
+          },
+          {
+            "ten": "Memory_Activities",
+            "gia_tri": 3.0,
+            "trung_vi": 2.0,
+            "do_lech": 0.33
+          },
+          {
+            "ten": "Memory_ViewRootImpl",
+            "gia_tri": 2.0,
+            "trung_vi": 2.0,
+            "do_lech": 0.0
+          }
+        ]
+      },
+      {
+        "ma": "Tài nguyên",
+        "ten": "Tài nguyên",
+        "mo_ta": "Ngữ cảnh app và file tài nguyên đang mở",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "Memory_Assets",
+            "gia_tri": 19.0,
+            "trung_vi": 2.0,
+            "do_lech": 8.5
+          },
+          {
+            "ten": "Memory_AppContexts",
+            "gia_tri": 10.0,
+            "trung_vi": 6.0,
+            "do_lech": 1.32
+          }
+        ]
+      },
+      {
+        "ma": "Binder",
+        "ten": "Binder",
+        "mo_ta": "Binder là kênh app liên lạc với dịch vụ hệ thống và app khác: số kết nối, dữ liệu gửi qua",
+        "muc": 0.24,
+        "chi_so": [
+          {
+            "ten": "Memory_ProxyBinders",
+            "gia_tri": 45.0,
+            "trung_vi": 32.0,
+            "do_lech": 1.44
+          },
+          {
+            "ten": "Memory_ParcelMemory",
+            "gia_tri": 5.0,
+            "trung_vi": 7.0,
+            "do_lech": 0.24
+          },
+          {
+            "ten": "Memory_ParcelCount",
+            "gia_tri": 22.0,
+            "trung_vi": 25.0,
+            "do_lech": 0.11
+          },
+          {
+            "ten": "Memory_LocalBinders",
+            "gia_tri": 17.0,
+            "trung_vi": 17.0,
+            "do_lech": 0.0
+          },
+          {
+            "ten": "Memory_DeathRecipients",
+            "gia_tri": 0.0,
+            "trung_vi": 0.0,
+            "do_lech": 0.0
+          }
+        ]
+      },
+      {
+        "ma": "Kết nối mã hóa",
+        "ten": "Kết nối mã hóa",
+        "mo_ta": "Số kết nối mạng mã hóa đang mở",
+        "muc": null,
+        "chi_so": []
+      },
+      {
+        "ma": "WebView",
+        "ten": "WebView",
+        "mo_ta": "Khung trình duyệt nhúng trong app, adware hay dùng để hiện quảng cáo",
+        "muc": 0.0,
+        "chi_so": [
+          {
+            "ten": "Memory_WebViews",
+            "gia_tri": 0.0,
+            "trung_vi": 0.0,
+            "do_lech": 0.0
+          }
+        ]
+      }
+    ],
+    "chua_thay": null,
+    "ma_bam": "f2b4d3f021c3a6207c3c9e75a75fa325b88847bd46b4f99e41e28dc3be8fae7f",
+    "ten": "org.secuso.privacyfriendlydicer_101.apk",
+    "goi": "org.secuso.privacyfriendlydicer",
+    "so_do_ram": {
+      "Memory_PssTotal": 42690,
+      "Memory_PssClean": 5284,
+      "Memory_SharedDirty": 24740,
+      "Memory_PrivateDirty": 32532,
+      "Memory_SharedClean": 79276,
+      "Memory_PrivateClean": 5384,
+      "Memory_SwapPssDirty": 218,
+      "Memory_HeapSize": 41766,
+      "Memory_HeapAlloc": 31681,
+      "Memory_HeapFree": 6222,
+      "Memory_Views": 221,
+      "Memory_ViewRootImpl": 2,
+      "Memory_AppContexts": 10,
+      "Memory_Activities": 3,
+      "Memory_Assets": 19,
+      "Memory_AssetManagers": 0,
+      "Memory_LocalBinders": 17,
+      "Memory_ProxyBinders": 45,
+      "Memory_ParcelMemory": 5,
+      "Memory_ParcelCount": 22,
+      "Memory_DeathRecipients": 0,
+      "Memory_OpenSSLSockets": null,
+      "Memory_WebViews": 0
+    },
+    "do_lech_ho_so": {
+      "diem": 1.0,
+      "so_chi_so": 20,
+      "chi_so_lon_nhat": "Memory_SharedDirty"
+    }
+  },
+  "loi": null
+}

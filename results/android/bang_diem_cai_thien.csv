@@ -1,0 +1,19 @@
+﻿cach,dac_trung,mo_hinh,accuracy,f1_macro
+C1-C2-C4 tung lan do,chi RAM,LightGBM,0.7260,0.6571
+C1-C2-C4 tung lan do,chi RAM,XGBoost,0.7289,0.6527
+C1-C2-C4 tung lan do,chi RAM,LightGBM + XGBoost,0.7298,0.6567
+C1-C2-C4 tung lan do,RAM + ti le,LightGBM,0.7279,0.6537
+C1-C2-C4 tung lan do,RAM + ti le,XGBoost,0.7315,0.6552
+C1-C2-C4 tung lan do,RAM + ti le,LightGBM + XGBoost,0.7318,0.6568
+C1-C2-C4 tung lan do,tat ca,LightGBM,0.8155,0.7606
+C1-C2-C4 tung lan do,tat ca,XGBoost,0.8189,0.7628
+C1-C2-C4 tung lan do,tat ca,LightGBM + XGBoost,0.8188,0.7644
+C3 gop theo app,chi RAM,LightGBM,0.7064,0.6136
+C3 gop theo app,chi RAM,XGBoost,0.7151,0.6232
+C3 gop theo app,chi RAM,LightGBM + XGBoost,0.7113,0.6225
+C3 gop theo app,RAM + ti le,LightGBM,0.7119,0.6164
+C3 gop theo app,RAM + ti le,XGBoost,0.7169,0.6214
+C3 gop theo app,RAM + ti le,LightGBM + XGBoost,0.7161,0.6230
+C3 gop theo app,tat ca,LightGBM,0.7961,0.7235
+C3 gop theo app,tat ca,XGBoost,0.8032,0.7319
+C3 gop theo app,tat ca,LightGBM + XGBoost,0.8038,0.7343

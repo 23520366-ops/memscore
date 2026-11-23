@@ -1,0 +1,335 @@
+{
+  "thoi_diem": "2026-11-23T02:50:00.109468+07:00",
+  "job_id": "46b86c37502344b6ad15189ffe60dfa5",
+  "sha256": "ae4688fe48e751517e7a1d56aed27bff10b87daac0d7e28993fb193a7dc8f223",
+  "ten_file": "com.github.muellerma.coffee_47.apk",
+  "goi": "com.github.muellerma.coffee",
+  "may_ao": "emulator-5554",
+  "giay_chay": 40,
+  "buoc": [
+    {
+      "ma": "sha256",
+      "ten": "Tính SHA-256",
+      "trang_thai": "xong",
+      "thoi_gian": 0.03,
+      "ghi_chu": "ae4688fe48e751517e7a1d56aed27bff10b87daac0d7e28993fb193a7dc8f223"
+    },
+    {
+      "ma": "may_ao",
+      "ten": "Chuẩn bị máy ảo Android",
+      "trang_thai": "xong",
+      "thoi_gian": 0.15,
+      "ghi_chu": "Dùng máy ảo đang mở (emulator-5554)."
+    },
+    {
+      "ma": "cai_dat",
+      "ten": "Cài app và xác định gói",
+      "trang_thai": "xong",
+      "thoi_gian": 1.87,
+      "ghi_chu": "Đã cài com.github.muellerma.coffee."
+    },
+    {
+      "ma": "chay",
+      "ten": "Mở app và chạy Monkey",
+      "trang_thai": "xong",
+      "thoi_gian": 44.47,
+      "ghi_chu": "Monkey gửi 160 lượt chạm ngẫu nhiên, cách nhau 250 ms."
+    },
+    {
+      "ma": "doc_ram",
+      "ten": "Đọc số đo RAM",
+      "trang_thai": "xong",
+      "thoi_gian": 0.83,
+      "ghi_chu": "Tổng PSS 55850 KB."
+    },
+    {
+      "ma": "cham_diem",
+      "ten": "Chấm điểm bằng mô hình",
+      "trang_thai": "xong",
+      "thoi_gian": 0.02,
+      "ghi_chu": "Loại đứng đầu theo mô hình: Adware (54,62%)."
+    },
+    {
+      "ma": "go_app",
+      "ten": "Gỡ app",
+      "trang_thai": "xong",
+      "thoi_gian": 0.92,
+      "ghi_chu": "Gói com.github.muellerma.coffee đã được dọn khỏi máy ảo."
+    }
+  ],
+  "meminfo_tho": "Applications Memory Usage (in Kilobytes):\nUptime: 318000 Realtime: 318000\n\n** MEMINFO in pid 5828 [com.github.muellerma.coffee] **\n                   Pss      Pss   Shared  Private   Shared  Private  SwapPss      Rss     Heap     Heap     Heap\n                 Total    Clean    Dirty    Dirty    Clean    Clean    Dirty    Total     Size    Alloc     Free\n                ------   ------   ------   ------   ------   ------   ------   ------   ------   ------   ------\n  Native Heap    32909        0     1240    32876       16       20       22    34152    42424    36198     3274\n  Dalvik Heap     8678        0      908     8616        4       48       95     9576    11374     5687     5687\n Dalvik Other     1904        0      472     1812        8        0        2     2292                           \n        Stack      512        0        4      512        0        0        0      516                           \n       Ashmem       10        0      548        0        0        0        0      548                           \n    Other dev       18        0      232        4        0       12        0      248                           \n     .so mmap     4646     2652     1552      252    31060     2652        2    35516                           \n    .jar mmap     1371      152        0        0    28964      152        0    29116                           \n    .apk mmap      402       36        0        0     2700       36        0     2736                           \n    .ttf mmap      222       20        0        0      888       20        0      908                           \n    .dex mmap     2928     2916        0        4      768     2916        0     3688                           \n    .oat mmap      549        0        0        0    13816        0        0    13816                           \n    .art mmap      928       80    19140      496      352       80      101    20068                           \n   Other mmap       68        0       20        8      996       24        0     1048                           \n      Unknown      483        0      372      480        0        0        0      852                           \n        TOTAL    55850     5856    24488    45060    79572     5960      222   155080    53798    41885     8961\n \n Dalvik Details\n        .Heap     7640        0        0     7640        0        0        0     7640                           \n         .LOS      516        0       56      516        0        0       19      572                           \n      .Zygote      338        0      852      276        4       48       76     1180                           \n   .NonMoving      184        0        0      184        0        0        0      184                           \n .LinearAlloc     1484        0      220     1480        8        0        2     1708                           \n          .GC      324        0       60      324        0        0        0      384                           \n   .ZygoteJIT        0        0       16        0        0        0        0       16                           \n      .AppJIT       88        0      176        0        0        0        0      176                           \n .IndirectRef        8        0        0        8        0        0        0        8                           \n   .Boot vdex        8        0        0        0      760        0        0      760                           \n     .App dex       44       40        0        4        0       40        0       44                           \n    .App vdex     2876     2876        0        0        8     2876        0     2884                           \n    .Boot art      928       80    19140      496      352       80      101    20068                           \n \n App Summary\n                       Pss(KB)                        Rss(KB)\n                        ------                         ------\n           Java Heap:     9192                          29644\n         Native Heap:    32876                          34152\n                Code:     6032                          85972\n               Stack:      512                            516\n            Graphics:        0                              0\n       Private Other:     2408\n              System:     4830\n             Unknown:                                    4796\n \n           TOTAL PSS:    55850            TOTAL RSS:   155080       TOTAL SWAP PSS:      222\n \n Objects\n               Views:      134         ViewRootImpl:        4\n         AppContexts:        7           Activities:        2\n              Assets:       19        AssetManagers:        0\n       Local Binders:       46        Proxy Binders:       42\n       Parcel memory:        6         Parcel count:       26\n    Death Recipients:        0             WebViews:        0\n \n SQL\n         MEMORY_USED:        0\n  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0\n \n",
+  "so_do_ram": {
+    "Memory_PssTotal": 55850,
+    "Memory_PssClean": 5856,
+    "Memory_SharedDirty": 24488,
+    "Memory_PrivateDirty": 45060,
+    "Memory_SharedClean": 79572,
+    "Memory_PrivateClean": 5960,
+    "Memory_SwapPssDirty": 222,
+    "Memory_HeapSize": 53798,
+    "Memory_HeapAlloc": 41885,
+    "Memory_HeapFree": 8961,
+    "Memory_Views": 134,
+    "Memory_ViewRootImpl": 4,
+    "Memory_AppContexts": 7,
+    "Memory_Activities": 2,
+    "Memory_Assets": 19,
+    "Memory_AssetManagers": 0,
+    "Memory_LocalBinders": 46,
+    "Memory_ProxyBinders": 42,
+    "Memory_ParcelMemory": 6,
+    "Memory_ParcelCount": 26,
+    "Memory_DeathRecipients": 0,
+    "Memory_OpenSSLSockets": null,
+    "Memory_WebViews": 0
+  },
+  "ket_qua": {
+    "nen_tang": "android_ram",
+    "nguon": "Đo trực tiếp trên máy ảo Android (com.github.muellerma.coffee)",
+    "sach_doc": {
+      "co": false,
+      "ly_do": "Mô hình RAM Android học từ tập dữ liệu chỉ có mã độc và dự đoán loại mã độc. Với app sạch, loại dự đoán và độ tin cậy chỉ mang tính tham khảo."
+    },
+    "loai": [
+      {
+        "ma": "Adware",
+        "ten": "Adware",
+        "p": 0.5462
+      },
+      {
+        "ma": "Zero_Day",
+        "ten": "Zero-day (mới, chưa rõ loại)",
+        "p": 0.2072
+      },
+      {
+        "ma": "Riskware",
+        "ten": "Riskware",
+        "p": 0.1743
+      }
+    ],
+    "chac_chan": false,
+    "nhan_that": null,
+    "ho": null,
+    "dung": null,
+    "khoi": [
+      {
+        "ma": "Heap",
+        "ten": "Heap",
+        "mo_ta": "Bộ nhớ heap Java và heap native của tiến trình",
+        "muc": 0.363,
+        "chi_so": [
+          {
+            "ten": "Memory_HeapSize",
+            "gia_tri": 53798.0,
+            "trung_vi": 20449.0,
+            "do_lech": 2.18
+          },
+          {
+            "ten": "Memory_HeapAlloc",
+            "gia_tri": 41885.0,
+            "trung_vi": 16575.0,
+            "do_lech": 2.08
+          },
+          {
+            "ten": "Memory_HeapFree",
+            "gia_tri": 8961.0,
+            "trung_vi": 4063.0,
+            "do_lech": 1.52
+          }
+        ]
+      },
+      {
+        "ma": "RAM riêng",
+        "ten": "RAM riêng",
+        "mo_ta": "RAM chỉ app này dùng",
+        "muc": 0.02,
+        "chi_so": [
+          {
+            "ten": "Memory_PrivateDirty",
+            "gia_tri": 45060.0,
+            "trung_vi": 41404.0,
+            "do_lech": 0.12
+          },
+          {
+            "ten": "Memory_PrivateClean",
+            "gia_tri": 5960.0,
+            "trung_vi": 8180.0,
+            "do_lech": 0.11
+          }
+        ]
+      },
+      {
+        "ma": "RAM chia sẻ",
+        "ten": "RAM chia sẻ",
+        "mo_ta": "RAM tính cả phần dùng chung với app khác",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "Memory_SharedDirty",
+            "gia_tri": 24488.0,
+            "trung_vi": 10732.0,
+            "do_lech": 12.55
+          },
+          {
+            "ten": "Memory_SharedClean",
+            "gia_tri": 79572.0,
+            "trung_vi": 89516.0,
+            "do_lech": 0.44
+          },
+          {
+            "ten": "Memory_PssTotal",
+            "gia_tri": 55850.0,
+            "trung_vi": 61249.0,
+            "do_lech": 0.12
+          },
+          {
+            "ten": "Memory_PssClean",
+            "gia_tri": 5856.0,
+            "trung_vi": 6352.0,
+            "do_lech": 0.02
+          }
+        ]
+      },
+      {
+        "ma": "Giao diện",
+        "ten": "Giao diện",
+        "mo_ta": "Số màn hình và thành phần giao diện",
+        "muc": 0.105,
+        "chi_so": [
+          {
+            "ten": "Memory_Views",
+            "gia_tri": 134.0,
+            "trung_vi": 35.0,
+            "do_lech": 0.63
+          },
+          {
+            "ten": "Memory_ViewRootImpl",
+            "gia_tri": 4.0,
+            "trung_vi": 2.0,
+            "do_lech": 0.41
+          },
+          {
+            "ten": "Memory_Activities",
+            "gia_tri": 2.0,
+            "trung_vi": 2.0,
+            "do_lech": 0.0
+          }
+        ]
+      },
+      {
+        "ma": "Tài nguyên",
+        "ten": "Tài nguyên",
+        "mo_ta": "Ngữ cảnh app và file tài nguyên đang mở",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "Memory_Assets",
+            "gia_tri": 19.0,
+            "trung_vi": 2.0,
+            "do_lech": 8.5
+          },
+          {
+            "ten": "Memory_AppContexts",
+            "gia_tri": 7.0,
+            "trung_vi": 6.0,
+            "do_lech": 0.33
+          }
+        ]
+      },
+      {
+        "ma": "Binder",
+        "ten": "Binder",
+        "mo_ta": "Binder là kênh app liên lạc với dịch vụ hệ thống và app khác: số kết nối, dữ liệu gửi qua",
+        "muc": 0.242,
+        "chi_so": [
+          {
+            "ten": "Memory_LocalBinders",
+            "gia_tri": 46.0,
+            "trung_vi": 17.0,
+            "do_lech": 1.45
+          },
+          {
+            "ten": "Memory_ProxyBinders",
+            "gia_tri": 42.0,
+            "trung_vi": 32.0,
+            "do_lech": 1.11
+          },
+          {
+            "ten": "Memory_ParcelMemory",
+            "gia_tri": 6.0,
+            "trung_vi": 7.0,
+            "do_lech": 0.12
+          },
+          {
+            "ten": "Memory_ParcelCount",
+            "gia_tri": 26.0,
+            "trung_vi": 25.0,
+            "do_lech": 0.04
+          },
+          {
+            "ten": "Memory_DeathRecipients",
+            "gia_tri": 0.0,
+            "trung_vi": 0.0,
+            "do_lech": 0.0
+          }
+        ]
+      },
+      {
+        "ma": "Kết nối mã hóa",
+        "ten": "Kết nối mã hóa",
+        "mo_ta": "Số kết nối mạng mã hóa đang mở",
+        "muc": null,
+        "chi_so": []
+      },
+      {
+        "ma": "WebView",
+        "ten": "WebView",
+        "mo_ta": "Khung trình duyệt nhúng trong app, adware hay dùng để hiện quảng cáo",
+        "muc": 0.0,
+        "chi_so": [
+          {
+            "ten": "Memory_WebViews",
+            "gia_tri": 0.0,
+            "trung_vi": 0.0,
+            "do_lech": 0.0
+          }
+        ]
+      }
+    ],
+    "chua_thay": null,
+    "ma_bam": "ae4688fe48e751517e7a1d56aed27bff10b87daac0d7e28993fb193a7dc8f223",
+    "ten": "com.github.muellerma.coffee_47.apk",
+    "goi": "com.github.muellerma.coffee",
+    "so_do_ram": {
+      "Memory_PssTotal": 55850,
+      "Memory_PssClean": 5856,
+      "Memory_SharedDirty": 24488,
+      "Memory_PrivateDirty": 45060,
+      "Memory_SharedClean": 79572,
+      "Memory_PrivateClean": 5960,
+      "Memory_SwapPssDirty": 222,
+      "Memory_HeapSize": 53798,
+      "Memory_HeapAlloc": 41885,
+      "Memory_HeapFree": 8961,
+      "Memory_Views": 134,
+      "Memory_ViewRootImpl": 4,
+      "Memory_AppContexts": 7,
+      "Memory_Activities": 2,
+      "Memory_Assets": 19,
+      "Memory_AssetManagers": 0,
+      "Memory_LocalBinders": 46,
+      "Memory_ProxyBinders": 42,
+      "Memory_ParcelMemory": 6,
+      "Memory_ParcelCount": 26,
+      "Memory_DeathRecipients": 0,
+      "Memory_OpenSSLSockets": null,
+      "Memory_WebViews": 0
+    },
+    "do_lech_ho_so": {
+      "diem": 1.0,
+      "so_chi_so": 20,
+      "chi_so_lon_nhat": "Memory_SharedDirty"
+    }
+  },
+  "loi": null
+}

@@ -1,0 +1,38 @@
+{
+  "so_mau": 58596,
+  "so_dac_trung": 52,
+  "cot_bi_bo": [
+    "pslist.nprocs64bit",
+    "handles.nport",
+    "svcscan.interactive_process_services"
+  ],
+  "dong_trung_lap": 569,
+  "phan_bo_sach_doc": {
+    "Benign": 29298,
+    "Malware": 29298
+  },
+  "phan_bo_loai": {
+    "Benign": 29298,
+    "Spyware": 10020,
+    "Ransomware": 9791,
+    "Trojan": 9487
+  },
+  "phan_bo_ho": {
+    "Benign": 29298,
+    "Transponder": 2410,
+    "Gator": 2200,
+    "Shade": 2128,
+    "Ako": 2000,
+    "180solutions": 2000,
+    "CWS": 2000,
+    "Refroso": 2000,
+    "Scar": 2000,
+    "Conti": 1988,
+    "Emotet": 1967,
+    "Maze": 1958,
+    "Zeus": 1950,
+    "Pysa": 1717,
+    "Reconyc": 1570,
+    "TIBS": 1410
+  }
+}

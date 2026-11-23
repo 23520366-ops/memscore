@@ -1,0 +1,51 @@
+{
+  "android": {
+    "ae4688fe48e751517e7a1d56aed27bff10b87daac0d7e28993fb193a7dc8f223": {
+      "name": "Coffee 47",
+      "source_url": "https://f-droid.org/packages/com.github.muellerma.coffee/",
+      "package": "com.github.muellerma.coffee"
+    },
+    "f2b4d3f021c3a6207c3c9e75a75fa325b88847bd46b4f99e41e28dc3be8fae7f": {
+      "name": "Privacy Friendly Dicer 101",
+      "source_url": "https://f-droid.org/packages/org.secuso.privacyfriendlydicer/",
+      "package": "org.secuso.privacyfriendlydicer"
+    },
+    "fbe2fa19b05adc4d1335f7a2456c138b8483b643746c45dee6c6fb14ca7a6db8": {
+      "name": "Level 35",
+      "source_url": "https://f-droid.org/packages/org.woheller69.level/",
+      "package": "org.woheller69.level"
+    }
+  },
+  "windows": {
+    "dd3757f31c97e33776f2590317d4fb12f2da075db3dbb1e3f94d0f2a01d84ffa": {
+      "name": "7-Zip Extra 26.06",
+      "source_url": "https://github.com/ip7z/7zip/releases/tag/26.06",
+      "filename": "7za.exe",
+      "arguments": [
+        "b",
+        "100",
+        "-mmt1"
+      ]
+    },
+    "d01fdb5aae8f112526040a39b0bfb9e27d813003178645e65f8d1cfdb2a26c87": {
+      "name": "PuTTY 0.85",
+      "source_url": "https://the.earth.li/~sgtatham/putty/0.85/sha256sums",
+      "filename": "putty.exe"
+    },
+    "e80db2dad715a6c5adabe292d31ed54e11f4e9b99ca349827b50573b175891bc": {
+      "name": "7-Zip 7zr 26.06",
+      "source_url": "https://github.com/ip7z/7zip/releases/tag/26.06",
+      "filename": "7zr.exe",
+      "arguments": [
+        "b",
+        "100",
+        "-mmt1"
+      ]
+    },
+    "b34e96a8088644415dff0b4af6c7a444f4119d90c5a7d6bed78f5bc164dbb357": {
+      "name": "Notepad++ 8.7.1 portable",
+      "source_url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.7.1",
+      "filename": "notepadpp.exe"
+    }
+  }
+}

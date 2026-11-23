@@ -1,0 +1,10 @@
+Mô hình tốt nhất: XGBoost
+
+              precision    recall  f1-score   support
+
+      Benign     1.0000    0.9997    0.9998      5900
+     Malware     0.9996    1.0000    0.9998      5381
+
+    accuracy                         0.9998     11281
+   macro avg     0.9998    0.9998    0.9998     11281
+weighted avg     0.9998    0.9998    0.9998     11281

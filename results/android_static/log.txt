@@ -1,0 +1,65 @@
+Tổng số dòng: 357805
+Label
+Benign          162181
+Riskware         97349
+Adware           47210
+Trojan           13559
+Zeroday          13340
+Ransomware        6202
+Spy               3540
+SMS               3125
+Dropper           2302
+NoCategory        2296
+PUA               2051
+Scareware         1556
+Backdoor          1538
+Banker             887
+FileInfector       669
+  đã đọc 500/9503 cột
+  đã đọc 1000/9503 cột
+  đã đọc 1500/9503 cột
+  đã đọc 2000/9503 cột
+  đã đọc 2500/9503 cột
+  đã đọc 3000/9503 cột
+  đã đọc 3500/9503 cột
+  đã đọc 4000/9503 cột
+  đã đọc 4500/9503 cột
+  đã đọc 5000/9503 cột
+  đã đọc 5500/9503 cột
+  đã đọc 6000/9503 cột
+  đã đọc 6500/9503 cột
+  đã đọc 7000/9503 cột
+  đã đọc 7500/9503 cột
+  đã đọc 8000/9503 cột
+  đã đọc 8500/9503 cột
+  đã đọc 9000/9503 cột
+  đã đọc 9500/9503 cột
+  đã đọc 9503/9503 cột
+Bỏ 5283 cột không đổi trong mẫu, còn 4220 đặc trưng
+  [S1_sach_doc_static] Logistic Regression  acc=0.9615 f1=0.9615 (15.8s)
+  [S1_sach_doc_static] Decision Tree        acc=0.9681 f1=0.9681 (15.7s)
+  [S1_sach_doc_static] Random Forest        acc=0.9799 f1=0.9799 (75.1s)
+  [S1_sach_doc_static] XGBoost              acc=0.9797 f1=0.9797 (100.1s)
+        experiment               model  accuracy  precision   recall       f1  train_seconds  ms_per_sample
+S1_sach_doc_static Logistic Regression  0.961493   0.961744 0.961403 0.961479          15.79         0.0129
+S1_sach_doc_static       Decision Tree  0.968119   0.968111 0.968145 0.968118          15.71         0.0025
+S1_sach_doc_static       Random Forest  0.979934   0.980137 0.979858 0.979928          75.12         0.0549
+S1_sach_doc_static             XGBoost  0.979684   0.979787 0.979633 0.979679         100.07         0.0107
+              so_mau_test  ti_le_phat_hien
+Label                                     
+NoCategory             92           0.7174
+PUA                    97           0.8660
+Zeroday               540           0.8981
+Scareware              62           0.9194
+Backdoor               80           0.9625
+Adware               1903           0.9658
+SMS                   131           0.9695
+Spy                   140           0.9714
+Dropper                85           0.9765
+Trojan                601           0.9817
+Ransomware            239           0.9833
+Riskware             3894           0.9908
+FileInfector           19           1.0000
+Banker                 45           1.0000
+Báo nhầm trên mẫu sạch: 0.0115
+Xong.

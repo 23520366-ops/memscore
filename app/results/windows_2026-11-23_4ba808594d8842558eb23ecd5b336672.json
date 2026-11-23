@@ -1,0 +1,912 @@
+{
+  "job_id": "4ba808594d8842558eb23ecd5b336672",
+  "ten_file": "Windows sạch (đo nền)",
+  "sha256": null,
+  "mau": "nen",
+  "trang_thai": "xong",
+  "buoc": [
+    {
+      "ma": "khoi_phuc",
+      "ten": "Khôi phục ảnh chụp sạch",
+      "trang_thai": "xong",
+      "thoi_gian": 1.29,
+      "ghi_chu": "Đã khôi phục ảnh chụp «sach»."
+    },
+    {
+      "ma": "khoi_dong",
+      "ten": "Khởi động và chờ VMware Tools",
+      "trang_thai": "xong",
+      "thoi_gian": 26.98,
+      "ghi_chu": "VMware Tools đang chạy."
+    },
+    {
+      "ma": "chep",
+      "ten": "Chép tệp vào máy ảo",
+      "trang_thai": "bo_qua",
+      "thoi_gian": null,
+      "ghi_chu": "Mẫu có sẵn trên máy ảo hoặc đo nền."
+    },
+    {
+      "ma": "chay",
+      "ten": "Chạy mẫu và chờ 60 giây",
+      "trang_thai": "xong",
+      "thoi_gian": 60.0,
+      "ghi_chu": "Đo nền. Chờ 60 giây sau khi VMware Tools sẵn sàng."
+    },
+    {
+      "ma": "chup_ram",
+      "ten": "Tạm dừng máy ảo và lấy RAM",
+      "trang_thai": "xong",
+      "thoi_gian": 1.83,
+      "ghi_chu": "Đã nhận Win11-IE105-f2249a73.vmem."
+    },
+    {
+      "ma": "volatility",
+      "ten": "Rút đặc trưng bằng Volatility 3",
+      "trang_thai": "xong",
+      "thoi_gian": 271.69,
+      "ghi_chu": "Đo được 49/55 đặc trưng."
+    },
+    {
+      "ma": "cham_diem",
+      "ten": "Chấm điểm bằng mô hình Windows",
+      "trang_thai": "xong",
+      "thoi_gian": 0.12,
+      "ghi_chu": "Xác suất mã độc theo mô hình 0,08%."
+    },
+    {
+      "ma": "don",
+      "ten": "Trả máy ảo về ảnh chụp sạch",
+      "trang_thai": "xong",
+      "thoi_gian": 1.12,
+      "ghi_chu": "Đã trả máy ảo về ảnh chụp sạch và kiểm tra tệp RAM."
+    },
+    {
+      "ma": "luu",
+      "ten": "Lưu kết quả",
+      "trang_thai": "xong",
+      "thoi_gian": 0.0,
+      "ghi_chu": "windows_2026-11-23_4ba808594d8842558eb23ecd5b336672.json"
+    }
+  ],
+  "ket_qua": {
+    "nen_tang": "windows",
+    "nguon": "Đo trực tiếp RAM của Win11-IE105 bằng Volatility 3",
+    "sach_doc": {
+      "co": true,
+      "doc": false,
+      "tin_cay": 0.9992
+    },
+    "loai": [
+      {
+        "ma": "Benign",
+        "ten": "Sạch",
+        "p": 0.9993
+      },
+      {
+        "ma": "Spyware",
+        "ten": "Phần mềm gián điệp",
+        "p": 0.0005
+      },
+      {
+        "ma": "Ransomware",
+        "ten": "Mã độc tống tiền",
+        "p": 0.0001
+      },
+      {
+        "ma": "Trojan",
+        "ten": "Trojan",
+        "p": 0.0001
+      }
+    ],
+    "xac_suat_doc": 0.000756067456677556,
+    "nhan_that": "Sạch",
+    "ho": null,
+    "dung": true,
+    "khoi": [
+      {
+        "ma": "pslist",
+        "ten": "Tiến trình",
+        "mo_ta": "Danh sách tiến trình đang chạy, số luồng, số handle trung bình",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "pslist.nproc",
+            "gia_tri": 114.0,
+            "trung_vi": 42.0,
+            "do_lech": 14.85
+          },
+          {
+            "ten": "pslist.nppid",
+            "gia_tri": 17.0,
+            "trung_vi": 12.0,
+            "do_lech": 1.18
+          },
+          {
+            "ten": "pslist.avg_handlers",
+            "gia_tri": 314.780701754386,
+            "trung_vi": 289.72446425,
+            "do_lech": 0.91
+          },
+          {
+            "ten": "pslist.avg_threads",
+            "gia_tri": 11.807017543859649,
+            "trung_vi": 12.83773279,
+            "do_lech": 0.87
+          },
+          {
+            "ten": "pslist.nprocs64bit",
+            "gia_tri": 1.0,
+            "trung_vi": null,
+            "do_lech": null
+          }
+        ]
+      },
+      {
+        "ma": "dlllist",
+        "ten": "DLL",
+        "mo_ta": "Số thư viện được nạp vào các tiến trình",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "dlllist.ndlls",
+            "gia_tri": 4658.0,
+            "trung_vi": 2087.0,
+            "do_lech": 14.62
+          },
+          {
+            "ten": "dlllist.avg_dlls_per_proc",
+            "gia_tri": 43.129629629629626,
+            "trung_vi": 49.61094657,
+            "do_lech": 1.91
+          }
+        ]
+      },
+      {
+        "ma": "handles",
+        "ten": "Handle",
+        "mo_ta": "Số đối tượng đang mở: file, registry, mutex, sự kiện, luồng...",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "handles.nhandles",
+            "gia_tri": 35885.0,
+            "trung_vi": 12186.0,
+            "do_lech": 25.54
+          },
+          {
+            "ten": "handles.ndirectory",
+            "gia_tri": 252.0,
+            "trung_vi": 104.0,
+            "do_lech": 13.57
+          },
+          {
+            "ten": "handles.nsemaphore",
+            "gia_tri": 1433.0,
+            "trung_vi": 750.0,
+            "do_lech": 12.52
+          },
+          {
+            "ten": "handles.nkey",
+            "gia_tri": 2671.0,
+            "trung_vi": 857.0,
+            "do_lech": 10.5
+          },
+          {
+            "ten": "handles.nevent",
+            "gia_tri": 8504.0,
+            "trung_vi": 4322.0,
+            "do_lech": 9.91
+          },
+          {
+            "ten": "handles.ndesktop",
+            "gia_tri": 105.0,
+            "trung_vi": 46.0,
+            "do_lech": 9.73
+          },
+          {
+            "ten": "handles.ntimer",
+            "gia_tri": 199.0,
+            "trung_vi": 142.0,
+            "do_lech": 7.84
+          },
+          {
+            "ten": "handles.nsection",
+            "gia_tri": 739.0,
+            "trung_vi": 415.0,
+            "do_lech": 5.79
+          },
+          {
+            "ten": "handles.nfile",
+            "gia_tri": 1461.0,
+            "trung_vi": 1080.0,
+            "do_lech": 3.93
+          },
+          {
+            "ten": "handles.nthread",
+            "gia_tri": 1577.0,
+            "trung_vi": 1169.0,
+            "do_lech": 3.68
+          },
+          {
+            "ten": "handles.nmutant",
+            "gia_tri": 468.0,
+            "trung_vi": 366.0,
+            "do_lech": 1.73
+          },
+          {
+            "ten": "handles.avg_handles_per_proc",
+            "gia_tri": 329.2201834862385,
+            "trung_vi": 291.30182694999996,
+            "do_lech": 1.51
+          },
+          {
+            "ten": "handles.nport",
+            "gia_tri": 0.0,
+            "trung_vi": null,
+            "do_lech": null
+          }
+        ]
+      },
+      {
+        "ma": "ldrmodules",
+        "ten": "DLL bị giấu",
+        "mo_ta": "DLL có trong bộ nhớ nhưng không có trong danh sách nạp chính thức",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "ldrmodules.not_in_init",
+            "gia_tri": 352.0,
+            "trung_vi": 115.0,
+            "do_lech": 11.85
+          },
+          {
+            "ten": "ldrmodules.not_in_load",
+            "gia_tri": 245.0,
+            "trung_vi": 74.0,
+            "do_lech": 9.5
+          },
+          {
+            "ten": "ldrmodules.not_in_mem",
+            "gia_tri": 245.0,
+            "trung_vi": 74.0,
+            "do_lech": 9.5
+          },
+          {
+            "ten": "ldrmodules.not_in_init_avg",
+            "gia_tri": 0.07251751133086115,
+            "trung_vi": 0.054939982,
+            "do_lech": 0.02
+          },
+          {
+            "ten": "ldrmodules.not_in_load_avg",
+            "gia_tri": 0.05047383601153688,
+            "trung_vi": 0.036319613,
+            "do_lech": 0.01
+          },
+          {
+            "ten": "ldrmodules.not_in_mem_avg",
+            "gia_tri": 0.05047383601153688,
+            "trung_vi": 0.036319613,
+            "do_lech": 0.01
+          }
+        ]
+      },
+      {
+        "ma": "malfind",
+        "ten": "Tiêm mã",
+        "mo_ta": "Vùng nhớ vừa ghi được vừa chạy được, dấu hiệu mã bị chèn vào tiến trình khác",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "malfind.commitCharge",
+            "gia_tri": 1599.0,
+            "trung_vi": 5.0,
+            "do_lech": 46.97
+          },
+          {
+            "ten": "malfind.uniqueInjections",
+            "gia_tri": 8.0,
+            "trung_vi": 1.333333333,
+            "do_lech": 6.67
+          },
+          {
+            "ten": "malfind.protection",
+            "gia_tri": 96.0,
+            "trung_vi": 25.0,
+            "do_lech": 2.49
+          },
+          {
+            "ten": "malfind.ninjections",
+            "gia_tri": 16.0,
+            "trung_vi": 4.0,
+            "do_lech": 2.48
+          }
+        ]
+      },
+      {
+        "ma": "psxview",
+        "ten": "Tiến trình ẩn",
+        "mo_ta": "Tiến trình thấy được bằng cách quét nhưng không có trong danh sách thường",
+        "muc": 0.325,
+        "chi_so": [
+          {
+            "ten": "psxview.not_in_csrss_handles",
+            "gia_tri": 17.0,
+            "trung_vi": 4.0,
+            "do_lech": 1.95
+          },
+          {
+            "ten": "psxview.not_in_ethread_pool",
+            "gia_tri": 9.0,
+            "trung_vi": 0.0,
+            "do_lech": 1.35
+          },
+          {
+            "ten": "psxview.not_in_pslist",
+            "gia_tri": 8.0,
+            "trung_vi": 0.0,
+            "do_lech": 1.32
+          },
+          {
+            "ten": "psxview.not_in_eprocess_pool",
+            "gia_tri": 1.0,
+            "trung_vi": 0.0,
+            "do_lech": 1.0
+          },
+          {
+            "ten": "psxview.not_in_pslist_false_avg",
+            "gia_tri": 0.06666666666666667,
+            "trung_vi": 0.0022899319999999997,
+            "do_lech": 0.06
+          },
+          {
+            "ten": "psxview.not_in_ethread_pool_false_avg",
+            "gia_tri": 0.075,
+            "trung_vi": 0.012358173,
+            "do_lech": 0.06
+          },
+          {
+            "ten": "psxview.not_in_csrss_handles_false_avg",
+            "gia_tri": 0.14166666666666666,
+            "trung_vi": 0.106068583,
+            "do_lech": 0.04
+          },
+          {
+            "ten": "psxview.not_in_eprocess_pool_false_avg",
+            "gia_tri": 0.008333333333333333,
+            "trung_vi": 0.0,
+            "do_lech": 0.01
+          }
+        ]
+      },
+      {
+        "ma": "modules",
+        "ten": "Module nhân",
+        "mo_ta": "Số driver/module đang nạp trong nhân Windows",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "modules.nmodules",
+            "gia_tri": 184.0,
+            "trung_vi": 138.0,
+            "do_lech": 46.0
+          }
+        ]
+      },
+      {
+        "ma": "svcscan",
+        "ten": "Dịch vụ",
+        "mo_ta": "Số dịch vụ Windows, driver nhân, driver hệ thống file",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "svcscan.kernel_drivers",
+            "gia_tri": 777.0,
+            "trung_vi": 222.0,
+            "do_lech": 555.0
+          },
+          {
+            "ten": "svcscan.nservices",
+            "gia_tri": 1523.0,
+            "trung_vi": 395.0,
+            "do_lech": 376.0
+          },
+          {
+            "ten": "svcscan.shared_process_services",
+            "gia_tri": 406.0,
+            "trung_vi": 118.0,
+            "do_lech": 288.0
+          },
+          {
+            "ten": "svcscan.nactive",
+            "gia_tri": 392.0,
+            "trung_vi": 123.0,
+            "do_lech": 134.5
+          },
+          {
+            "ten": "svcscan.process_services",
+            "gia_tri": 145.0,
+            "trung_vi": 27.0,
+            "do_lech": 59.0
+          },
+          {
+            "ten": "svcscan.fs_drivers",
+            "gia_tri": 84.0,
+            "trung_vi": 26.0,
+            "do_lech": 58.0
+          },
+          {
+            "ten": "svcscan.interactive_process_services",
+            "gia_tri": 0.0,
+            "trung_vi": null,
+            "do_lech": null
+          }
+        ]
+      },
+      {
+        "ma": "callbacks",
+        "ten": "Callback",
+        "mo_ta": "Các hàm được đăng ký để nhân gọi khi có sự kiện",
+        "muc": 1.0,
+        "chi_so": [
+          {
+            "ten": "callbacks.ncallbacks",
+            "gia_tri": 303.0,
+            "trung_vi": 88.0,
+            "do_lech": 215.0
+          },
+          {
+            "ten": "callbacks.ngeneric",
+            "gia_tri": 20.0,
+            "trung_vi": 8.0,
+            "do_lech": 12.0
+          },
+          {
+            "ten": "callbacks.nanonymous",
+            "gia_tri": 2.0,
+            "trung_vi": 0.0,
+            "do_lech": 2.0
+          }
+        ]
+      }
+    ],
+    "chua_thay": null,
+    "ma_bam": null,
+    "ten": "Windows sạch (đo nền)",
+    "so_do_windows": {
+      "pslist.nproc": 114,
+      "pslist.nppid": 17,
+      "pslist.avg_threads": 11.807017543859649,
+      "pslist.nprocs64bit": 1,
+      "pslist.avg_handlers": 314.780701754386,
+      "dlllist.ndlls": 4658,
+      "dlllist.avg_dlls_per_proc": 43.129629629629626,
+      "handles.nhandles": 35885,
+      "handles.avg_handles_per_proc": 329.2201834862385,
+      "handles.nport": 0,
+      "handles.nfile": 1461,
+      "handles.nevent": 8504,
+      "handles.ndesktop": 105,
+      "handles.nkey": 2671,
+      "handles.nthread": 1577,
+      "handles.ndirectory": 252,
+      "handles.nsemaphore": 1433,
+      "handles.ntimer": 199,
+      "handles.nsection": 739,
+      "handles.nmutant": 468,
+      "ldrmodules.not_in_load": 245,
+      "ldrmodules.not_in_init": 352,
+      "ldrmodules.not_in_mem": 245,
+      "ldrmodules.not_in_load_avg": 0.05047383601153688,
+      "ldrmodules.not_in_init_avg": 0.07251751133086115,
+      "ldrmodules.not_in_mem_avg": 0.05047383601153688,
+      "malfind.ninjections": 16,
+      "malfind.commitCharge": 1599,
+      "malfind.protection": 96,
+      "malfind.uniqueInjections": 8.0,
+      "psxview.not_in_pslist": 8,
+      "psxview.not_in_eprocess_pool": 1,
+      "psxview.not_in_ethread_pool": 9,
+      "psxview.not_in_pspcid_list": null,
+      "psxview.not_in_csrss_handles": 17,
+      "psxview.not_in_session": null,
+      "psxview.not_in_deskthrd": null,
+      "psxview.not_in_pslist_false_avg": 0.06666666666666667,
+      "psxview.not_in_eprocess_pool_false_avg": 0.008333333333333333,
+      "psxview.not_in_ethread_pool_false_avg": 0.075,
+      "psxview.not_in_pspcid_list_false_avg": null,
+      "psxview.not_in_csrss_handles_false_avg": 0.14166666666666666,
+      "psxview.not_in_session_false_avg": null,
+      "psxview.not_in_deskthrd_false_avg": null,
+      "modules.nmodules": 184,
+      "svcscan.nservices": 1523,
+      "svcscan.kernel_drivers": 777,
+      "svcscan.fs_drivers": 84,
+      "svcscan.process_services": 145,
+      "svcscan.shared_process_services": 406,
+      "svcscan.interactive_process_services": 0,
+      "svcscan.nactive": 392,
+      "callbacks.ncallbacks": 303,
+      "callbacks.nanonymous": 2,
+      "callbacks.ngeneric": 20
+    },
+    "ghi_chu_dac_trung": {
+      "pslist.nprocs64bit": "Đếm Wow64=true theo mã gốc VolMemLyzer, dù tên cột ghi 64 bit.",
+      "pslist.avg_handlers": "Nếu thiếu số đếm EPROCESS, dùng số dòng handles theo PID của tiến trình đó.",
+      "handles.nport": "Đếm loại Port như bộ gốc. ALPC Port là loại khác.",
+      "malfind.ninjections": "Số vùng do Malfind 3 phát hiện. Bộ lọc của Volatility 3 khác bản 2.",
+      "malfind.commitCharge": "Tổng CommitCharge từ các vùng Malfind 3 trả về, tính theo trang.",
+      "malfind.protection": "Tổng mã bảo vệ VAD quy từ tên PAGE_*. Với cờ phụ, chỉ lấy mã bảo vệ cơ sở.",
+      "malfind.uniqueInjections": "Số vùng chia cho số PID có ít nhất một vùng theo cách tính gốc.",
+      "svcscan.interactive_process_services": "Đếm bản ghi có đúng loại SERVICE_INTERACTIVE_PROCESS như cách tính gốc.",
+      "callbacks.nanonymous": "Đếm bản ghi không xác định được module từ Volatility 3.",
+      "psxview.not_in_pslist": "Dùng nguồn pslist trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_pslist_false_avg": "Dùng nguồn pslist trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_eprocess_pool": "Dùng nguồn psscan trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_eprocess_pool_false_avg": "Dùng nguồn psscan trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_ethread_pool": "Dùng nguồn thrdscan trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_ethread_pool_false_avg": "Dùng nguồn thrdscan trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_pspcid_list": "Volatility 3 không có nguồn tương ứng trong PsXView.",
+      "psxview.not_in_pspcid_list_false_avg": "Volatility 3 không có nguồn tương ứng trong PsXView.",
+      "psxview.not_in_csrss_handles": "Dùng nguồn csrss trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_csrss_handles_false_avg": "Dùng nguồn csrss trên tập tiến trình hợp nhất của Volatility 3.",
+      "psxview.not_in_session": "Volatility 3 không có nguồn tương ứng trong PsXView.",
+      "psxview.not_in_session_false_avg": "Volatility 3 không có nguồn tương ứng trong PsXView.",
+      "psxview.not_in_deskthrd": "Volatility 3 không có nguồn tương ứng trong PsXView.",
+      "psxview.not_in_deskthrd_false_avg": "Volatility 3 không có nguồn tương ứng trong PsXView."
+    },
+    "khoang_huan_luyen": {
+      "so_dong": 47315,
+      "so_da_do": 49,
+      "ngoai_khoang": [
+        "pslist.nprocs64bit",
+        "dlllist.ndlls",
+        "handles.nevent",
+        "handles.nkey",
+        "handles.nsemaphore",
+        "ldrmodules.not_in_load",
+        "ldrmodules.not_in_init",
+        "ldrmodules.not_in_mem",
+        "modules.nmodules",
+        "svcscan.nservices",
+        "svcscan.kernel_drivers",
+        "svcscan.fs_drivers",
+        "svcscan.process_services",
+        "svcscan.shared_process_services",
+        "svcscan.nactive",
+        "callbacks.ncallbacks",
+        "callbacks.nanonymous",
+        "callbacks.ngeneric"
+      ],
+      "cac_khoang": {
+        "pslist.nproc": {
+          "min": 21.0,
+          "max": 240.0
+        },
+        "pslist.nppid": {
+          "min": 8.0,
+          "max": 66.0
+        },
+        "pslist.avg_threads": {
+          "min": 1.65,
+          "max": 16.81818182
+        },
+        "pslist.nprocs64bit": {
+          "min": 0.0,
+          "max": 0.0
+        },
+        "pslist.avg_handlers": {
+          "min": 34.9625,
+          "max": 1174.536585
+        },
+        "dlllist.ndlls": {
+          "min": 670.0,
+          "max": 3443.0
+        },
+        "dlllist.avg_dlls_per_proc": {
+          "min": 7.333333333,
+          "max": 53.17073171
+        },
+        "handles.nhandles": {
+          "min": 3514.0,
+          "max": 48156.0
+        },
+        "handles.avg_handles_per_proc": {
+          "min": 71.13924051,
+          "max": 1174.536585
+        },
+        "handles.nport": {
+          "min": 0.0,
+          "max": 0.0
+        },
+        "handles.nfile": {
+          "min": 266.0,
+          "max": 40605.0
+        },
+        "handles.nevent": {
+          "min": 966.0,
+          "max": 7892.0
+        },
+        "handles.ndesktop": {
+          "min": 22.0,
+          "max": 159.0
+        },
+        "handles.nkey": {
+          "min": 284.0,
+          "max": 2629.0
+        },
+        "handles.nthread": {
+          "min": 388.0,
+          "max": 2026.0
+        },
+        "handles.ndirectory": {
+          "min": 57.0,
+          "max": 311.0
+        },
+        "handles.nsemaphore": {
+          "min": 296.0,
+          "max": 1028.0
+        },
+        "handles.ntimer": {
+          "min": 69.0,
+          "max": 222.0
+        },
+        "handles.nsection": {
+          "min": 50.0,
+          "max": 14687.0
+        },
+        "handles.nmutant": {
+          "min": 118.0,
+          "max": 582.0
+        },
+        "ldrmodules.not_in_load": {
+          "min": 6.0,
+          "max": 240.0
+        },
+        "ldrmodules.not_in_init": {
+          "min": 16.0,
+          "max": 264.0
+        },
+        "ldrmodules.not_in_mem": {
+          "min": 6.0,
+          "max": 240.0
+        },
+        "ldrmodules.not_in_load_avg": {
+          "min": 0.016176471,
+          "max": 0.531120332
+        },
+        "ldrmodules.not_in_init_avg": {
+          "min": 0.040525739,
+          "max": 0.585062241
+        },
+        "ldrmodules.not_in_mem_avg": {
+          "min": 0.016176471,
+          "max": 0.531120332
+        },
+        "malfind.ninjections": {
+          "min": 1.0,
+          "max": 627.0
+        },
+        "malfind.commitCharge": {
+          "min": 1.0,
+          "max": 220850.0
+        },
+        "malfind.protection": {
+          "min": 6.0,
+          "max": 3762.0
+        },
+        "malfind.uniqueInjections": {
+          "min": 1.0,
+          "max": 90.66666667
+        },
+        "psxview.not_in_pslist": {
+          "min": 0.0,
+          "max": 43.0
+        },
+        "psxview.not_in_eprocess_pool": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "psxview.not_in_ethread_pool": {
+          "min": 0.0,
+          "max": 201.0
+        },
+        "psxview.not_in_pspcid_list": {
+          "min": 0.0,
+          "max": 43.0
+        },
+        "psxview.not_in_csrss_handles": {
+          "min": 4.0,
+          "max": 205.0
+        },
+        "psxview.not_in_session": {
+          "min": 2.0,
+          "max": 45.0
+        },
+        "psxview.not_in_deskthrd": {
+          "min": 4.0,
+          "max": 207.0
+        },
+        "psxview.not_in_pslist_false_avg": {
+          "min": 0.0,
+          "max": 0.551282051
+        },
+        "psxview.not_in_eprocess_pool_false_avg": {
+          "min": 0.0,
+          "max": 0.043478261
+        },
+        "psxview.not_in_ethread_pool_false_avg": {
+          "min": 0.0,
+          "max": 0.8375
+        },
+        "psxview.not_in_pspcid_list_false_avg": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "psxview.not_in_csrss_handles_false_avg": {
+          "min": 0.025806452,
+          "max": 0.854166667
+        },
+        "psxview.not_in_session_false_avg": {
+          "min": 0.008333333,
+          "max": 0.576923077
+        },
+        "psxview.not_in_deskthrd_false_avg": {
+          "min": 0.04375,
+          "max": 0.8625
+        },
+        "modules.nmodules": {
+          "min": 126.0,
+          "max": 138.0
+        },
+        "svcscan.nservices": {
+          "min": 94.0,
+          "max": 395.0
+        },
+        "svcscan.kernel_drivers": {
+          "min": 55.0,
+          "max": 222.0
+        },
+        "svcscan.fs_drivers": {
+          "min": 6.0,
+          "max": 26.0
+        },
+        "svcscan.process_services": {
+          "min": 7.0,
+          "max": 27.0
+        },
+        "svcscan.shared_process_services": {
+          "min": 26.0,
+          "max": 118.0
+        },
+        "svcscan.interactive_process_services": {
+          "min": 0.0,
+          "max": 0.0
+        },
+        "svcscan.nactive": {
+          "min": 30.0,
+          "max": 129.0
+        },
+        "callbacks.ncallbacks": {
+          "min": 50.0,
+          "max": 89.0
+        },
+        "callbacks.nanonymous": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "callbacks.ngeneric": {
+          "min": 7.0,
+          "max": 8.0
+        }
+      }
+    },
+    "ghi_chu": "Điểm mô hình trên Windows 11 và Volatility 3 dùng để đối chiếu với dữ liệu gốc. Các ô chưa đo được được truyền vào XGBoost dưới dạng giá trị thiếu."
+  },
+  "loi": null,
+  "tep_ket_qua": "windows_2026-11-23_4ba808594d8842558eb23ecd5b336672.json",
+  "thoi_gian": 363.04,
+  "thoi_diem": "2026-11-23T07:06:44.285673+07:00",
+  "giay_cho": 60,
+  "anh_ram": {
+    "ten": "Win11-IE105-f2249a73.vmem",
+    "kich_thuoc": 4294967296,
+    "co_vmss": true
+  },
+  "dac_trung": {
+    "pslist.nproc": 114,
+    "pslist.nppid": 17,
+    "pslist.avg_threads": 11.807017543859649,
+    "pslist.nprocs64bit": 1,
+    "pslist.avg_handlers": 314.780701754386,
+    "dlllist.ndlls": 4658,
+    "dlllist.avg_dlls_per_proc": 43.129629629629626,
+    "handles.nhandles": 35885,
+    "handles.avg_handles_per_proc": 329.2201834862385,
+    "handles.nport": 0,
+    "handles.nfile": 1461,
+    "handles.nevent": 8504,
+    "handles.ndesktop": 105,
+    "handles.nkey": 2671,
+    "handles.nthread": 1577,
+    "handles.ndirectory": 252,
+    "handles.nsemaphore": 1433,
+    "handles.ntimer": 199,
+    "handles.nsection": 739,
+    "handles.nmutant": 468,
+    "ldrmodules.not_in_load": 245,
+    "ldrmodules.not_in_load_avg": 0.05047383601153688,
+    "ldrmodules.not_in_init": 352,
+    "ldrmodules.not_in_init_avg": 0.07251751133086115,
+    "ldrmodules.not_in_mem": 245,
+    "ldrmodules.not_in_mem_avg": 0.05047383601153688,
+    "malfind.ninjections": 16,
+    "malfind.commitCharge": 1599,
+    "malfind.protection": 96,
+    "malfind.uniqueInjections": 8.0,
+    "psxview.not_in_pslist": 8,
+    "psxview.not_in_pslist_false_avg": 0.06666666666666667,
+    "psxview.not_in_eprocess_pool": 1,
+    "psxview.not_in_eprocess_pool_false_avg": 0.008333333333333333,
+    "psxview.not_in_ethread_pool": 9,
+    "psxview.not_in_ethread_pool_false_avg": 0.075,
+    "psxview.not_in_pspcid_list": null,
+    "psxview.not_in_pspcid_list_false_avg": null,
+    "psxview.not_in_csrss_handles": 17,
+    "psxview.not_in_csrss_handles_false_avg": 0.14166666666666666,
+    "psxview.not_in_session": null,
+    "psxview.not_in_session_false_avg": null,
+    "psxview.not_in_deskthrd": null,
+    "psxview.not_in_deskthrd_false_avg": null,
+    "modules.nmodules": 184,
+    "svcscan.nservices": 1523,
+    "svcscan.kernel_drivers": 777,
+    "svcscan.fs_drivers": 84,
+    "svcscan.process_services": 145,
+    "svcscan.shared_process_services": 406,
+    "svcscan.interactive_process_services": 0,
+    "svcscan.nactive": 392,
+    "callbacks.ncallbacks": 303,
+    "callbacks.nanonymous": 2,
+    "callbacks.ngeneric": 20
+  },
+  "plugins": {
+    "pslist": {
+      "so_dong": 114,
+      "thoi_gian": 99.01
+    },
+    "dlllist": {
+      "so_dong": 4658,
+      "thoi_gian": 8.84
+    },
+    "handles": {
+      "so_dong": 35885,
+      "thoi_gian": 34.43
+    },
+    "ldrmodules": {
+      "so_dong": 4854,
+      "thoi_gian": 18.12
+    },
+    "malfind": {
+      "so_dong": 16,
+      "thoi_gian": 51.07
+    },
+    "psxview": {
+      "so_dong": 120,
+      "thoi_gian": 24.19
+    },
+    "modules": {
+      "so_dong": 184,
+      "thoi_gian": 2.87
+    },
+    "svcscan": {
+      "so_dong": 1523,
+      "thoi_gian": 16.88
+    },
+    "callbacks": {
+      "so_dong": 303,
+      "thoi_gian": 16.27
+    }
+  }
+}

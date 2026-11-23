@@ -1,0 +1,6 @@
+﻿bien_the,so_cot,accuracy,f1
+du 52 cot,52,0.9999,0.9999
+bo svcscan,46,0.9998,0.9998
+bo svcscan+handles,34,0.9996,0.9996
+bo svcscan+handles+callbacks+modules,30,0.9996,0.9996
+chi malfind+ldrmodules+psxview,24,0.9995,0.9994

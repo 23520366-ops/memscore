@@ -1,0 +1,35 @@
+Kích thước: (53439, 145)
+Cột chữ bỏ ra: ['Hash', 'Category', 'Family']
+Bỏ 15 cột chỉ có một giá trị
+Đặc trưng còn lại: 126 (trong đó 21 cột RAM)
+Train 42751 dòng, test 10688 dòng
+
+== A1_chi_RAM: chỉ các cột RAM ==
+  [A1_chi_RAM] Logistic Regression  acc=0.3172 f1=0.2599 (2.0s)
+  [A1_chi_RAM] Decision Tree        acc=0.6259 f1=0.5301 (0.8s)
+  [A1_chi_RAM] Random Forest        acc=0.7220 f1=0.6505 (11.8s)
+  [A1_chi_RAM] XGBoost              acc=0.7297 f1=0.6584 (21.1s)
+
+== A2_tat_ca: tất cả đặc trưng động ==
+  [A2_tat_ca] Logistic Regression  acc=0.5618 f1=0.4507 (6.0s)
+  [A2_tat_ca] Decision Tree        acc=0.7270 f1=0.6494 (2.6s)
+  [A2_tat_ca] Random Forest        acc=0.8107 f1=0.7469 (14.8s)
+  [A2_tat_ca] XGBoost              acc=0.8191 f1=0.7642 (72.6s)
+
+ experiment               model  accuracy  precision   recall       f1  train_seconds  ms_per_sample
+A1_chi_RAM Logistic Regression  0.317178   0.293074 0.380964 0.259932           1.97         0.0002
+A1_chi_RAM       Decision Tree  0.625936   0.532868 0.528445 0.530056           0.76         0.0003
+A1_chi_RAM       Random Forest  0.722025   0.633997 0.674202 0.650530          11.79         0.0356
+A1_chi_RAM             XGBoost  0.729697   0.668393 0.650401 0.658383          21.14         0.0575
+ A2_tat_ca Logistic Regression  0.561845   0.430351 0.591083 0.450689           5.98         0.0005
+ A2_tat_ca       Decision Tree  0.726984   0.648409 0.652243 0.649427           2.63         0.0003
+ A2_tat_ca       Random Forest  0.810722   0.739940 0.757937 0.746932          14.82         0.0329
+ A2_tat_ca             XGBoost  0.819143   0.779411 0.751835 0.764232          72.64         0.0757
+  API        ( 92 cột) F1=0.6958
+  Battery    (  2 cột) F1=0.1230
+  Logcat     (  6 cột) F1=0.1551
+  Memory     ( 21 cột) F1=0.6533
+  Network    (  4 cột) F1=0.2912
+  Process    (  1 cột) F1=0.0543
+
+Xong. Kết quả trong results/android, mô hình trong models/

@@ -1,0 +1,12 @@
+Mô hình tốt nhất: XGBoost
+
+              precision    recall  f1-score   support
+
+      Benign     1.0000    0.9997    0.9998      5900
+      Trojan     0.6988    0.7064    0.7026      1652
+     Spyware     0.7416    0.7992    0.7693      1907
+  Ransomware     0.7183    0.6537    0.6845      1822
+
+    accuracy                         0.8669     11281
+   macro avg     0.7897    0.7897    0.7891     11281
+weighted avg     0.8667    0.8669    0.8664     11281

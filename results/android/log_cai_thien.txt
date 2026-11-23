@@ -1,0 +1,116 @@
+
+== Đơn vị chấm: từng lần đo (giống bản gốc) ==
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  C1-C2-C4 tung lan do           chi RAM      LightGBM             acc=0.7260 f1=0.6571 (95s)
+  C1-C2-C4 tung lan do           chi RAM      XGBoost              acc=0.7289 f1=0.6527 (95s)
+  C1-C2-C4 tung lan do           chi RAM      LightGBM + XGBoost   acc=0.7298 f1=0.6567 (95s)
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  C1-C2-C4 tung lan do           RAM + ti le  LightGBM             acc=0.7279 f1=0.6537 (104s)
+  C1-C2-C4 tung lan do           RAM + ti le  XGBoost              acc=0.7315 f1=0.6552 (104s)
+  C1-C2-C4 tung lan do           RAM + ti le  LightGBM + XGBoost   acc=0.7318 f1=0.6568 (104s)
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  C1-C2-C4 tung lan do           tat ca       LightGBM             acc=0.8155 f1=0.7606 (233s)
+  C1-C2-C4 tung lan do           tat ca       XGBoost              acc=0.8189 f1=0.7628 (233s)
+  C1-C2-C4 tung lan do           tat ca       LightGBM + XGBoost   acc=0.8188 f1=0.7644 (233s)
+
+== Đơn vị chấm: từng app (gộp trước + sau reboot) ==
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  C3 gop theo app                chi RAM      LightGBM             acc=0.7064 f1=0.6136 (157s)
+  C3 gop theo app                chi RAM      XGBoost              acc=0.7151 f1=0.6232 (157s)
+  C3 gop theo app                chi RAM      LightGBM + XGBoost   acc=0.7113 f1=0.6225 (157s)
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  C3 gop theo app                RAM + ti le  LightGBM             acc=0.7119 f1=0.6164 (238s)
+  C3 gop theo app                RAM + ti le  XGBoost              acc=0.7169 f1=0.6214 (238s)
+  C3 gop theo app                RAM + ti le  LightGBM + XGBoost   acc=0.7161 f1=0.6230 (238s)
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:103: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide[f"{c}__chenh"] = wide[s] - wide[t]
+/home/claude/work/doan/src/android_cai_thien.py:104: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  wide["co_ca_hai_lan_do"] = wide[[f"{cols[0]}__truoc", f"{cols[0]}__sau"]].notna().all(axis=1).astype(int)
+/home/claude/work/doan/src/android_cai_thien.py:105: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  return wide.reset_index()
+/home/claude/work/doan/src/android_cai_thien.py:105: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  return wide.reset_index()
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  C3 gop theo app                tat ca       LightGBM             acc=0.7961 f1=0.7235 (577s)
+  C3 gop theo app                tat ca       XGBoost              acc=0.8032 f1=0.7319 (577s)
+  C3 gop theo app                tat ca       LightGBM + XGBoost   acc=0.8038 f1=0.7343 (577s)
+
+== Bỏ Zero_Day và No_Category (tham khảo) ==
+/usr/local/lib/python3.13/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)

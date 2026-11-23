@@ -1,0 +1,22 @@
+Mô hình tốt nhất: XGBoost
+
+                precision    recall  f1-score   support
+
+      Riskware     0.8987    0.8749    0.8866      2838
+        Adware     0.8265    0.8887    0.8565      2256
+        Trojan     0.8469    0.8792    0.8627      1655
+      Zero_Day     0.5907    0.6154    0.6028       910
+    Ransomware     0.8063    0.8435    0.8245       607
+    Trojan_Spy     0.9076    0.8660    0.8863       567
+    Trojan_SMS     0.7842    0.7286    0.7554       409
+   No_Category     0.4984    0.4021    0.4451       383
+Trojan_Dropper     0.7984    0.6847    0.7372       295
+           PUA     0.8932    0.8496    0.8708       246
+      Backdoor     0.8051    0.6916    0.7441       227
+     Scareware     0.8548    0.8196    0.8368       194
+  FileInfector     0.6964    0.7222    0.7091        54
+ Trojan_Banker     0.7045    0.6596    0.6813        47
+
+      accuracy                         0.8191     10688
+     macro avg     0.7794    0.7518    0.7642     10688
+  weighted avg     0.8181    0.8191    0.8178     10688
